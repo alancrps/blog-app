@@ -9,7 +9,7 @@
 		"clean": "rimraf dist",
 		"tsc": "tsc",
 		"copy": "ts-node src/tools/copy-build-view.ts",
-		"build": "npm run tsc & npm run copy",
+		"build": "npm run clean & npm run tsc & npm run copy",
 		"typeorm:generate": "npx typeorm-ts-node-esm migration:generate -d src/db/dbcontext.ts"
 	},
 	"keywords": [],
