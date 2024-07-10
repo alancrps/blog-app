@@ -58,7 +58,7 @@ app.use('/', (req: Request, res: Response) => {
 	res.redirect('/noticias')
 })
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT;
 app.listen(port, () => {
 	console.log(`Servidor Express funcionando en http://localhost:${port} 🚀✅`);
 });
