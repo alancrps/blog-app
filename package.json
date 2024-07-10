@@ -5,7 +5,7 @@
 	"main": "server.js",
 	"scripts": {
 		"dev": "nodemon server.ts",
-		"start": "node dist/server.js",
+		"start": "node ./dist/server.js",
 		"clean": "rimraf dist",
 		"tsc": "tsc",
 		"copy": "ts-node src/tools/copy-build-view.ts",
