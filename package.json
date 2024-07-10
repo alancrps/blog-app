@@ -5,11 +5,11 @@
 	"main": "server.js",
 	"scripts": {
 		"dev": "nodemon server.ts",
-		"start": "node ./dist/server.js",
+		"start": "node dist/server.js",
 		"clean": "rimraf dist",
 		"tsc": "tsc",
 		"copy": "ts-node src/tools/copy-build-view.ts",
-		"build": "npm run clean & npm run tsc & npm run copy",
+		"build": "npm i & npm run clean & npm run tsc & npm run copy",
 		"typeorm:generate": "npx typeorm-ts-node-esm migration:generate -d src/db/dbcontext.ts"
 	},
 	"keywords": [],
