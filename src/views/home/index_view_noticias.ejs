@@ -1,0 +1,32 @@
+<div class="container my-5">
+	<div
+		class="row p-5 pb-0 pt-lg-5 align-items-center rounded-3 border shadow-lg"
+	>
+		<h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">
+			Noticias Recientes
+		</h1>
+		<div class="justify-content-md-start mb-4 mb-lg-2">
+			<hr class="hr" />
+			<div class="noticiasHome">
+				<% noticiasFormateadas.forEach(noticia =>{ %>
+				<div>
+					<p class="text-secondary text-start">
+						<i class="bi bi-calendar3"></i> <%= noticia.create_at %>hs.
+					</p>
+					<h3><%= noticia.titulo %></h3>
+					<p class="lead mb-4"><%= limitadorTexto(noticia.contenido, 300) %></p>
+				</div>
+				<div class="mb-4">
+					<a
+						role="button"
+						class="btn btn-outline-primary noticiasBtnHome"
+						href="noticias/get/<%= noticia.id %>"
+						>Seguir leyendo <i class="bi bi-arrow-right"></i
+					></a>
+				</div>
+				<hr class="hr" />
+				<% }); %>
+			</div>
+		</div>
+	</div>
+</div>
