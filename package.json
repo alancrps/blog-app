@@ -28,7 +28,9 @@
 		"pg": "^8.11.3",
 		"reflect-metadata": "^0.1.13",
 		"typeorm": "^0.3.17",
-		"winston": "^3.11.0"
+		"winston": "^3.11.0",
+		"rimraf": "^3.0.2",
+		"ts-node": "^10.4.0"
 	},
 	"devDependencies": {
 		"@types/bcrypt": "^5.0.2",
@@ -38,7 +40,6 @@
 		"@types/express-session": "1.17.0",
 		"@types/node": "^20.8.10",
 		"@types/shelljs": "^0.8.15",
-		"rimraf": "^5.0.5",
 		"shelljs": "^0.8.5"
 	}
 }
